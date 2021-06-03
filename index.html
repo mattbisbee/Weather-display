@@ -19,7 +19,7 @@
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Search for a City:</h5>
-          <input placeholder="City" id="cityName">
+          <input id="cityName">
           <button class="btn btn-primary" onclick="searchCity()">Search</button>
         </div>
       </div>
@@ -42,7 +42,7 @@
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Recent Searches</h5>
-          <ul class="list-group"></ul>
+          <ul class="list-group" id="recentSearches"></ul>
         </div>
       </div>
     </div>
@@ -54,50 +54,50 @@
           <div class="card text-dark bg-info mb-3" id="forcast" style="max-width: 18rem;">
             <div class="card-header" id="header1"></div>
             <div class="card-body">
-              <p class="card-text" id="high1">High:</p>
-              <p class="card-text" id="low1">Low:</p>
-              <p class="card-text" id="wind1">Wind:</p>
-              <p class="card-text" id="humidity1">Humidity:</p>
+              <p class="card-text" id="high1"></p>
+              <p class="card-text" id="low1"></p>
+              <p class="card-text" id="wind1"></p>
+              <p class="card-text" id="humidity1"></p>
             </div>
           </div>
 
           <div class="card text-dark bg-info mb-3" id="forcast" style="max-width: 18rem;">
             <div class="card-header" id="header2"></div>
             <div class="card-body">
-              <p class="card-text" id="high2">High:</p>
-              <p class="card-text" id="low2">Low:</p>
-              <p class="card-text" id="wind2">Wind:</p>
-              <p class="card-text" id="humidity2">Humidity:</p>
+              <p class="card-text" id="high2"></p>
+              <p class="card-text" id="low2"></p>
+              <p class="card-text" id="wind2"></p>
+              <p class="card-text" id="humidity2"></p>
             </div>
           </div>
 
           <div class="card text-dark bg-info mb-3" id="forcast" style="max-width: 18rem;">
             <div class="card-header" id="header3"></div>
             <div class="card-body">
-              <p class="card-text">High:</p>
-              <p class="card-text">Low:</p>
-              <p class="card-text">Wind:</p>
-              <p class="card-text">Humidity:</p>
+              <p class="card-text" id="high3"></p>
+              <p class="card-text" id="low3"></p>
+              <p class="card-text" id="wind3"></p>
+              <p class="card-text" id="humidity3"></p>
             </div>
           </div>
 
           <div class="card text-dark bg-info mb-3" id="forcast" style="max-width: 18rem;">
             <div class="card-header" id="header4"></div>
             <div class="card-body">
-              <p class="card-text">High:</p>
-              <p class="card-text">Low:</p>
-              <p class="card-text">Wind:</p>
-              <p class="card-text">Humidity:</p>
+              <p class="card-text" id="high4"></p>
+              <p class="card-text" id="low4"></p>
+              <p class="card-text" id="wind4"></p>
+              <p class="card-text" id="humidity4"></p>
             </div>
           </div>
 
           <div class="card text-dark bg-info mb-3" id="forcast" style="max-width: 18rem;">
             <div class="card-header" id="header5"></div>
             <div class="card-body">
-              <p class="card-text">High:</p>
-              <p class="card-text">Low:</p>
-              <p class="card-text">Wind:</p>
-              <p class="card-text">Humidity:</p>
+              <p class="card-text" id="high5"></p>
+              <p class="card-text" id="low5"></p>
+              <p class="card-text" id="wind5"></p>
+              <p class="card-text" id="humidity5"></p>
             </div>
           </div>
           
@@ -105,8 +105,8 @@
       </div>
     </div>
   </div>
-
-  <script src="assets/js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
+
 </html>
