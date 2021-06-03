@@ -1,0 +1,36 @@
+header {
+  width: 100%;
+  font-size: 35px;
+  text-align: center;
+  background-color: blue;
+  color: white;
+  margin-bottom: 30px;
+  font-weight:bold;
+
+}
+
+.btn {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#cityName,
+#cityState {
+  margin: 10px;
+  width: 100%;
+}
+
+#forcast {
+  display: inline-block;
+  width: 18%;
+  margin: auto;
+}
+
+.card-text {
+  font-size: 10px;
+}
+
+#currentDay {
+  font-size: 16px;
+  font-weight: bold;
+}
