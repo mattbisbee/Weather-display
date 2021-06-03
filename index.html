@@ -18,20 +18,20 @@
     <div class="col-sm-4">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Search for a City:</h5>
+          <h2 class="card-title">Search for a City:</h2>
           <input id="cityName">
-          <button class="btn btn-primary" onclick="searchCity()">Search</button>
+          <button class="btn btn-primary" onclick="searchCity()" i9d="searchBtn">Search</button>
         </div>
       </div>
     </div>
     <div class="col-sm-8">
       <div class="card">
         <div class="card-body">
-          <h2 class="card-title" id="currentCity"></h2>
-          <p class="card-text" id="currentDay"></p>
-          <p class="card-text" id="current0"></p>
-          <p class="card-text" id="wind0"></p>
-          <p class="card-text" id="humidity0"></p>
+          <h2 class="card-title" id="currentCity">City:</h2>
+          <p class="card-text" id="currentDay">Date:</p>
+          <p class="card-text" id="current0">Temp:</p>
+          <p class="card-text" id="wind0">Wind:</p>
+          <p class="card-text" id="humidity0">Humidity:</p>
         </div>
       </div>
     </div>
@@ -41,7 +41,7 @@
     <div class="col-sm-4">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Recent Searches</h5>
+          <h5 class="card-title">Recent Searches:</h5>
           <ul class="list-group" id="recentSearches"></ul>
         </div>
       </div>
@@ -52,52 +52,52 @@
           <h5 class="card-title">5 Day Forecast:</h5>
 
           <div class="card text-dark bg-info mb-3" id="forcast" style="max-width: 18rem;">
-            <div class="card-header" id="header1"></div>
+            <div class="card-header" id="header1">Date:</div>
             <div class="card-body">
-              <p class="card-text" id="high1"></p>
-              <p class="card-text" id="low1"></p>
-              <p class="card-text" id="wind1"></p>
-              <p class="card-text" id="humidity1"></p>
+              <p class="card-text" id="high1">High:</p>
+              <p class="card-text" id="low1">Low:</p>
+              <p class="card-text" id="wind1">Wind:</p>
+              <p class="card-text" id="humidity1">Humidity:</p>
             </div>
           </div>
 
           <div class="card text-dark bg-info mb-3" id="forcast" style="max-width: 18rem;">
-            <div class="card-header" id="header2"></div>
+            <div class="card-header" id="header2">Date:</div>
             <div class="card-body">
-              <p class="card-text" id="high2"></p>
-              <p class="card-text" id="low2"></p>
-              <p class="card-text" id="wind2"></p>
-              <p class="card-text" id="humidity2"></p>
+              <p class="card-text" id="high2">High:</p>
+              <p class="card-text" id="low2">Low:</p>
+              <p class="card-text" id="wind2">Wind:</p>
+              <p class="card-text" id="humidity2">Humidity:</p>
             </div>
           </div>
 
           <div class="card text-dark bg-info mb-3" id="forcast" style="max-width: 18rem;">
-            <div class="card-header" id="header3"></div>
+            <div class="card-header" id="header3">Date:</div>
             <div class="card-body">
-              <p class="card-text" id="high3"></p>
-              <p class="card-text" id="low3"></p>
-              <p class="card-text" id="wind3"></p>
-              <p class="card-text" id="humidity3"></p>
+              <p class="card-text" id="high3">High:</p>
+              <p class="card-text" id="low3">Low:</p>
+              <p class="card-text" id="wind3">Wind:</p>
+              <p class="card-text" id="humidity3">Humidity:</p>
             </div>
           </div>
 
           <div class="card text-dark bg-info mb-3" id="forcast" style="max-width: 18rem;">
-            <div class="card-header" id="header4"></div>
+            <div class="card-header" id="header4">Date:</div>
             <div class="card-body">
-              <p class="card-text" id="high4"></p>
-              <p class="card-text" id="low4"></p>
-              <p class="card-text" id="wind4"></p>
-              <p class="card-text" id="humidity4"></p>
+              <p class="card-text" id="high4">High:</p>
+              <p class="card-text" id="low4">Low:</p>
+              <p class="card-text" id="wind4">Wind:</p>
+              <p class="card-text" id="humidity4">Humidity:</p>
             </div>
           </div>
 
           <div class="card text-dark bg-info mb-3" id="forcast" style="max-width: 18rem;">
-            <div class="card-header" id="header5"></div>
+            <div class="card-header" id="header5">Date:</div>
             <div class="card-body">
-              <p class="card-text" id="high5"></p>
-              <p class="card-text" id="low5"></p>
-              <p class="card-text" id="wind5"></p>
-              <p class="card-text" id="humidity5"></p>
+              <p class="card-text" id="high5">High:</p>
+              <p class="card-text" id="low5">Low:</p>
+              <p class="card-text" id="wind5">Wind:</p>
+              <p class="card-text" id="humidity5">Humidity:</p>
             </div>
           </div>
           
@@ -105,6 +105,7 @@
       </div>
     </div>
   </div>
+  <!--<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>-->
   <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
