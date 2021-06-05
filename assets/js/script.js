@@ -1,7 +1,6 @@
-
 function searchCity() {
-  
   let cityName = document.querySelector('#cityName').value;
+  console.log(cityName);
 
   //setting time for the 5 day forecast
   currentDay = moment().format('dddd, MMMM Do YYYY');
@@ -71,10 +70,16 @@ function searchCity() {
             $('#recentSearches').empty();
           });
           var createBtn = document.createElement('button');
-          createBtn.setAttribute('id', 'recentSearchBtn');
+          createBtn.setAttribute('id', 'recentSearchBtn' + i);
+          createBtn.setAttribute('class', 'recentSearch')
           createBtn.innerHTML = values[i];
           recentSearchDiv.appendChild(createBtn);
         }
+
+        $('#recentSearchBtn0').click(function() {
+          let cityName = document.querySelector('#recentSearchBtn0').innerText;
+          console.log(cityName);
+        });
 
 
 

@@ -3,7 +3,7 @@
 ## Display the current weather for a selected city and it's 5 day forecast
 ---
 ### **General Info:**
-As for API calls, I actually used 2 differnt API calls from the OPENWEATHER API. I used "one call" and I also used the "Call 5 day". I did this so that I could pull the latitude and longitude from the '5 day' call so that I could use that data to run the 'one' call. Once the data loads, I created an empty array and pushed the city name to that array. Then I created a for loop  to iterate through that loop and create buttons with each city name on it. I then created an event listener to those buttons to run the city search again. 
+As for API calls, I actually used 2 different API calls from the OPENWEATHER API. I used "one call" and I also used the "5 day" call. I did this so that I could pull the latitude and longitude from the '5 day' call in order to fulfil the API call requirements for the 'one' call. Once the data loads, the city name is pushed to an empty array. Then a for loop iterates through that array and creates buttons with the city name. I then created an event listener to those buttons to run the city search again.
 
 
 
@@ -27,7 +27,8 @@ THEN I am again presented with current and future conditions for that city
 
 
 ### **Final Notes**
-With the help of my tutor and the TA's I was able to complete this assignment. I was able to code through about 90% of it on my own before I needed help. THat felt great that I was able to finally feel like I knew what needed to happen and was able to piece it together from the gorund up. 
+With the help of my tutor and the TA's I was able to complete this assignment. I was able to code through about 90% of it on my own before I needed help. THat felt great that I was able to finally feel like I knew what needed to happen and was able to piece it together from the ground up.
+I couldn't figure out how to display the icon so that will be something I will need to add later. I also wasn't able to generate the color of the UV index either. 
 
 
 ### **Location:**

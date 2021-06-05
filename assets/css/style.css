@@ -34,9 +34,15 @@ header {
   font-weight: bold;
 }
 
-#recentSearchBtn {
+.recentSearch {
   margin: 5px;
   background-color: blue;
   color: white;
   font-size: 22px;
+}
+
+.recentSearch:hover {
+  background-color: lightblue;
+  color: black;
+  font-weight: bold;
 }
