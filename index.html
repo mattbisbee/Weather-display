@@ -20,7 +20,7 @@
         <div class="card-body">
           <h2 class="card-title">Search for a City:</h2>
           <input id="cityName">
-          <button class="btn btn-primary" onclick="searchCity()" i9d="searchBtn">Search</button>
+          <button class="btn btn-primary" onclick="searchCity()" id="searchBtn">Search</button>
         </div>
       </div>
     </div>
@@ -42,7 +42,8 @@
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Recent Searches:</h5>
-          <ul class="list-group" id="recentSearches"></ul>
+          <div class="list-group" id="recentSearches">
+          </div>
         </div>
       </div>
     </div>
@@ -105,7 +106,7 @@
       </div>
     </div>
   </div>
-  <!--<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
