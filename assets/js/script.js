@@ -41,6 +41,7 @@ function searchCity() {
         var currentHumidEl = document.querySelector('#humidity0');
         currentHumidEl.innerHTML = 'Humidity: ' + currentHumid + '%';
 
+
         var latitude = response.coord.lat;
 
         var longitude = response.coord.lon;
@@ -86,7 +87,10 @@ function searchCity() {
           .then(function(response) {
             
             
-            
+            var currentUvIndex = response.current.uvi;
+            var currentUvEl = document.querySelector('#uvIndex0');
+            currentUvEl.innerHTML = 'UV Index: ' + currentUvIndex;
+
             //tomorrow (day 1 forcast)
             var day1El = document.querySelector('#header1');
             day1El.innerHTML = day1;
