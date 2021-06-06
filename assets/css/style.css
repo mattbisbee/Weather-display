@@ -46,3 +46,17 @@ header {
   color: black;
   font-weight: bold;
 }
+
+#uvIndex0 {
+  background-color: green;
+  display: inline-block;
+}
+
+#icon,
+#icon1,
+#icon2,
+#icon3,
+#icon4,
+#icon5 {
+  visibility: hidden;
+}

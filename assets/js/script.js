@@ -90,15 +90,39 @@ function searchCity() {
             return response.json();
           })
           .then(function(response) {
+
+          //Icon
+          $('#weatherIcon').attr('style','visibility:visible;');
+          var iconCode = response.current.weather[0].icon;
+          var iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
+          $('#weatherIcon').attr('src', iconUrl);
             
-            
+            //Today's UV index being called from this API instead of the 1st.
+
             var currentUvIndex = response.current.uvi;
             var currentUvEl = document.querySelector('#uvIndex0');
             currentUvEl.innerHTML = 'UV Index: ' + currentUvIndex;
 
+            if (currentUvIndex > 11) {
+              currentUvEl.setAttribute('style', "background-color: purple;")
+            } else if (currentUvIndex >= 8) {
+              currentUvEl.setAttribute('style', "background-color: red;")
+            } else if (currentUvIndex >= 6) {
+              currentUvEl.setAttribute('style', "background-color: orange;")
+            } else if (currentUvIndex >= 3) {
+              currentUvEl.setAttribute('style', "background-color: yellow;")
+            } else {
+
+            };
+
             //tomorrow (day 1 forcast)
             var day1El = document.querySelector('#header1');
             day1El.innerHTML = day1;
+
+            $('#weatherIcon1').attr('style','visibility:visible;');
+            var iconCode1 = response.daily[1].weather[0].icon;
+            var iconUrl1 = "http://openweathermap.org/img/w/" + iconCode1 + ".png";
+            $('#weatherIcon1').attr('src', iconUrl1);
             
             var day1High = response.daily[1].temp.max;
             var day1HighEl = document.querySelector('#high1');
@@ -120,6 +144,11 @@ function searchCity() {
             //day 2 forcast
             var day2El = document.querySelector('#header2');
             day2El.innerHTML = day2;
+
+            $('#weatherIcon2').attr('style','visibility:visible;');
+            var iconCode2 = response.daily[2].weather[0].icon;
+            var iconUrl2 = "http://openweathermap.org/img/w/" + iconCode2 + ".png";
+            $('#weatherIcon2').attr('src', iconUrl2);
             
             var day2High = response.daily[2].temp.max;
             var day2HighEl = document.querySelector('#high2');
@@ -140,6 +169,11 @@ function searchCity() {
             //day 3 forcast
             var day3El = document.querySelector('#header3');
             day3El.innerHTML = day3;
+
+            $('#weatherIcon3').attr('style','visibility:visible;');
+            var iconCode3 = response.daily[3].weather[0].icon;
+            var iconUrl3 = "http://openweathermap.org/img/w/" + iconCode3 + ".png";
+            $('#weatherIcon3').attr('src', iconUrl3);
             
             var day3High = response.daily[3].temp.max;
             var day3HighEl = document.querySelector('#high3');
@@ -160,6 +194,11 @@ function searchCity() {
             //day 4 forcast
             var day4El = document.querySelector('#header4');
             day4El.innerHTML = day4;
+
+            $('#weatherIcon4').attr('style','visibility:visible;');
+            var iconCode4 = response.daily[4].weather[0].icon;
+            var iconUrl4 = "http://openweathermap.org/img/w/" + iconCode4 + ".png";
+            $('#weatherIcon4').attr('src', iconUrl4);
             
             var day4High = response.daily[4].temp.max;
             var day4HighEl = document.querySelector('#high4');
@@ -180,6 +219,11 @@ function searchCity() {
             //day 5 forcast
             var day5El = document.querySelector('#header5');
             day5El.innerHTML = day5;
+
+            $('#weatherIcon5').attr('style','visibility:visible;');
+            var iconCode5 = response.daily[5].weather[0].icon;
+            var iconUrl5 = "http://openweathermap.org/img/w/" + iconCode5 + ".png";
+            $('#weatherIcon5').attr('src', iconUrl5);
             
             var day5High = response.daily[5].temp.max;
             var day5HighEl = document.querySelector('#high5');

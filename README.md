@@ -3,7 +3,7 @@
 ## Display the current weather for a selected city and it's 5 day forecast
 ---
 ### **General Info:**
-As for API calls, I actually used 2 different API calls from the OPENWEATHER API. I used "one call" and I also used the "5 day" call. I did this so that I could pull the latitude and longitude from the '5 day' call in order to fulfil the API call requirements for the 'one' call. Once the data loads, the city name is pushed to an empty array. Then a for loop iterates through that array and creates buttons with the city name. I then created an event listener to those buttons to run the city search again.
+As for API calls, I actually used 2 different API calls from the OPENWEATHER API. I used "one call" and I also used the "5 day" call. I did this so that I could pull the latitude and longitude from the '5 day' call in order to fulfil the API call requirements for the 'one' call. Once the data loads, the city name is pushed to an empty array. Then a for loop iterates through that array and creates buttons with the city name. I tried a few things but I coulnd't get the page to reload with the saved city info.
 
 
 
@@ -27,8 +27,7 @@ THEN I am again presented with current and future conditions for that city
 
 
 ### **Final Notes**
-With the help of my tutor and the TA's I was able to complete this assignment. I was able to code through about 90% of it on my own before I needed help. THat felt great that I was able to finally feel like I knew what needed to happen and was able to piece it together from the ground up.
-I couldn't figure out how to display the icon so that will be something I will need to add later. I also wasn't able to generate the color of the UV index either. 
+With the help of my tutor and the TA's I was able to complete most of this assignement. I was able to code through about 90% of it on my own before I needed help. That felt great that I was able to finally feel like I knew what needed to happen and was able to piece it together from the ground up. There was 1 thing that I couldn't get to work and that was the past search recall to function properly. I got the data to display but I couldn't figure out how to load that info again to display.  
 
 
 ### **Location:**
@@ -38,3 +37,4 @@ GitHub: https://github.com/mattbisbee/Weather-display/
 
 ## **Images:**
 ![Screenshot](assets/capture.jpg)
+![Screenshot](assets/capture2.jpg)
